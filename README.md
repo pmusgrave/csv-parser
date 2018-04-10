@@ -9,7 +9,7 @@ For example:
 var fs = require('fs');
 var csv = require('./csv.js');
 
-var read_stream = fs.createReadStream(videos_filepath).setEncoding('ascii');
+var read_stream = fs.createReadStream(input_csv_filepath).setEncoding('ascii');
 var write_stream = fs.createWriteStream('./output.csv', {flags: 'a', defaultEncoding: 'ascii'});
 
 read_stream.on('data', function(data) {
