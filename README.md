@@ -2,7 +2,7 @@
 Flexible Node.js module to parse CSV data.
 
 ### Asynchronous Version
-Use `parse_csv(csv_data, row_handler)` to process your data asynchronously with Node streams. The second argument is a higher order function that is called on each row of CSV data. The function you pass in is responsible for whatever you'd like to do with each row. A typical use case would be processing or validating each row and sending it to a separate Node output stream.
+Use `parse_csv(csv_data, row_handler)` to process your data asynchronously with Node streams. The second argument is a first class function that is called on each row of CSV data. The function you pass in is responsible for whatever you'd like to do with each row. A typical use case would be processing or validating each row and sending it to a separate Node output stream.
 
 For example:
 ```
